@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginStart="-10dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/introvertedDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-15dp"
+            android:text="INTROVERTED"
+            android:fontFamily="@font/rubik_bold"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/nomatches"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="No hay"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

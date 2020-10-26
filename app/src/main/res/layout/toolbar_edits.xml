@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparente"
+    android:elevation="4dp">
+
+    <ImageButton
+        android:id="@+id/cancel_musicG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_cancel"/>
+
+    <ImageButton
+        android:id="@+id/save_musicG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_checked"
+        android:layout_marginStart="350dp"
+        />
+
+</androidx.appcompat.widget.Toolbar>

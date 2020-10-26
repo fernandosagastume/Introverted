@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMusicGenres"
+    android:background="@drawable/profile_selector">
+
+    <ImageView
+        android:id="@+id/gustoIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lv_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center"
+        android:text="Texto musica"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

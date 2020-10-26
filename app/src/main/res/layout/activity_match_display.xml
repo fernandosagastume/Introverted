@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchDisplay">
+
+    <ImageButton
+        android:id="@+id/cancel_mv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_cancel_mv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/transparente"
+        >
+
+        <TextView
+            android:id="@+id/matchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:gravity="center"
+            android:text="¡Han hecho match!"
+            android:textColor="@color/colorWhite"
+            android:background="@color/transparente"
+            android:textSize="38sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@color/transparente"
+            android:layout_marginBottom="20sp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userMIM"
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                android:background="@color/transparente"
+                android:src="@drawable/sample" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/matchMIM"
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                android:background="@color/transparente"
+                android:src="@drawable/sample2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/namesMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="Tú y x se interesan"
+            android:textColor="@color/colorWhite"
+            android:textSize="28sp"
+            android:background="@color/transparente"
+            android:layout_marginBottom="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/transparente"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sendM"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rr_match"
+                android:fontFamily="@font/rubik_medium"
+                android:foregroundGravity="center"
+                android:shadowColor="#FFFFFF"
+                android:textSize="18sp"
+                android:text="Enviar un mensaje"
+                android:drawablePadding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/keepSwiping"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rr_match"
+                android:fontFamily="@font/rubik_medium"
+                android:foregroundGravity="center"
+                android:shadowColor="#FFFFFF"
+                android:textSize="18sp"
+                android:text="Seguir deslizando"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,17 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.introverted">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <activity android:name=".SpotifyApi" />
+        <activity android:name=".UserImages" />
+        <activity
+            android:name=".MatchDisplay"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentBG" />
+        <activity
+            android:name=".ProfileLink"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditPersonalCategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".EditFoodType"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".EditHobbies"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".EditMovieGenres"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".EditMusicGenres"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".WikiQuery"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".ChatAndForum"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamesAndActivities"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity android:name=".RegistroGustosPt4_1" />
+        <activity android:name=".RegistroGustosPt7" />
+        <activity android:name=".RegistroGustosPt6" />
+        <activity android:name=".RegistroGustosPt5" />
+        <activity android:name=".RegistroGustosPt4" />
+        <activity android:name=".RegistroGustosPt3" />
+        <activity
+            android:name=".PasswordForget"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegistroGustosPt2" />
+        <activity
+            android:name=".Dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashboardTheme" />
+        <activity android:name=".RegistroGustos" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity android:name=".Onboarding" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

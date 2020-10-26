@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar_editprof"
+        layout="@layout/toolbar_editprof" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_ep"
+        >
+        <!-- Primer RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editprof_im"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_user_pic" />
+        <ImageButton
+            android:id="@+id/change_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="185dp"
+            android:src="@drawable/ic_photo_edit"
+            android:background="@color/transparente"/>
+
+        </RelativeLayout>
+        <!-- Segundo RelativeLayout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp">
+
+          <ImageButton
+              android:id="@+id/picIm1"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginStart="40dp"
+              android:src="@drawable/ic_add_pics"
+              android:scaleType="centerCrop"
+              android:background="@drawable/rounded_rectangles"/>
+
+            <ImageButton
+                android:id="@+id/picIm2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="160dp"
+                android:src="@drawable/ic_add_pics"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_rectangles"/>
+
+            <ImageButton
+                android:id="@+id/picIm3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="280dp"
+                android:src="@drawable/ic_add_pics"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_rectangles"/>
+
+            <TextView
+                android:id="@+id/imageCounter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/picIm3"
+                android:layout_alignStart="@+id/picIm3"
+                android:layout_alignEnd="@+id/picIm3"
+                android:layout_alignBottom="@+id/picIm3"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_bold"
+                android:padding="16dp"
+                android:text="+1"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+        <!-- Edit texts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información personal"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/rubik_bold"
+            android:textSize="22sp"
+            android:padding="16dp"
+            android:layout_marginTop="380dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/google_textLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="430dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombre_text"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:maxLength="25"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/rubik_medium"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/border_button"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/google_textLay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="505dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/apellido_text"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:maxLength="25"
+                android:textSize="18sp"
+                android:fontFamily="@font/rubik_medium"
+                android:padding="16dp"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/border_button"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/bday_ep"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="585dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik_medium"
+            android:drawableEnd="@drawable/ic_calendario"
+            android:text="Fecha de cumpleaños"
+            android:background="@drawable/border_button"
+            />
+
+        <Button
+            android:id="@+id/gender_ep"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="660dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik_medium"
+            android:drawableEnd="@drawable/ic_gender_symbols"
+            android:text="Género"
+            android:background="@drawable/border_button"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información extra"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/rubik_bold"
+            android:textSize="22sp"
+            android:padding="16dp"
+            android:layout_marginTop="735dp"
+            />
+
+        <Button
+            android:id="@+id/drinkbt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="795dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik_medium"
+            android:drawableEnd="@drawable/ic_bebes"
+            android:text="Bebes"
+            android:background="@drawable/border_button"
+            />
+
+        <Button
+            android:id="@+id/smokebt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="865dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik_medium"
+            android:drawableEnd="@drawable/ic_fumas"
+            android:text="Fumas"
+            android:background="@drawable/border_button"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/google_textLay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe acerca de ti"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="945dp"
+            android:layout_marginBottom="40dp"
+            app:counterMaxLength="140"
+            app:counterEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/rubik_medium"
+                android:padding="16dp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorBlack"
+                android:maxLength="140"
+                android:background="@drawable/border_button"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

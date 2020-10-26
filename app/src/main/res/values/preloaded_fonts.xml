@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta</item>
+        <item>@font/amaranth</item>
+        <item>@font/amaranth_bold_italic</item>
         <item>@font/pathway_gothic_one</item>
         <item>@font/roboto_medium</item>
         <item>@font/roboto_thin</item>

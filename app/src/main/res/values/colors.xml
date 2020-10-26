@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#1D5480</color>
+    <color name="nav_color">#0032E7</color>
+    <color name="nav_selected">#39C34A</color>
     <color name="colorPrimaryDark">#1D5480</color>
     <color name="colorAccent">#1D5480</color>
     <color name="colorGrey">#676060</color>
     <color name="colorWhite">#FFFF</color>
-    <color name="colorBlack">#121111</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorBlackVariant">#121111</color>
+    <color name="bg_login">#4DFFFFFF</color>
+    <color name="item_selected">#4DFFFFFF</color>
+    <color name="text_in_forms">#B3FFFFFF</color>
+    <color name="transparente">#00FFFFFF</color>
+    <color name="theme_dash">#1D54B4</color>
+    <color name="selector_profile">#9A1D5480</color>
+    <color name="second_primary">#1d8032</color>
 </resources>

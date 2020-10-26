@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp">
+
+    <ImageButton
+        android:id="@+id/cancelButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_cancel_ep"/>
+
+    <ImageButton
+        android:id="@+id/saveButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_checked_ep"
+        android:layout_marginStart="350dp"
+        />
+
+</androidx.appcompat.widget.Toolbar>

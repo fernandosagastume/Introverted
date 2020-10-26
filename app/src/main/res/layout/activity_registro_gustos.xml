@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registergustos_scroll_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroGustos"
+    android:background="@drawable/lineargradient">
+
+
+    <Button
+        android:id="@+id/siguiente_gustos"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_rectangle"
+        android:fontFamily="@font/rubik_medium"
+        android:foregroundGravity="center"
+        android:shadowColor="#FFFFFF"
+        android:text="SIGUIENTE"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wiki_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/select_text"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Selecciona el tipo de persona que te define mejor"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/person_type"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/siguiente_gustos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_text"
+        app:layout_constraintVertical_bias="0.215"
+        android:checkedButton="@id/radio_artista">
+
+        <RadioButton
+            android:id="@+id/radio_artista"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="ARTISTA"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_text"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <RadioButton
+            android:id="@+id/radio_otaku"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="OTAKU"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_text"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <RadioButton
+            android:id="@+id/radio_gamer"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="GAMER"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_text"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <RadioButton
+            android:id="@+id/radio_melomano"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="MELÓMANO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_text"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <RadioButton
+            android:id="@+id/radio_bibliofilo"
+            android:layout_width="350dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangle"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="BIBLIÓFILO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_text"
+            app:layout_constraintVertical_bias="0.101" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/wiki_button"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/editt_bg"
+        android:drawableStart="@drawable/ic_wikipedia_icon"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Artista"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/siguiente_gustos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wiki_text"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/wiki_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="Para mas información visita: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/wiki_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_type"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
