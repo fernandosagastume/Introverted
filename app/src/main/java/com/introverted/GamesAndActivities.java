@@ -1,9 +1,7 @@
 package com.introverted;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,42 +13,23 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
-import android.location.Address;
-import android.location.Geocoder;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.games.Games;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.introverted.adapters.HorizontalMatchesAdapter;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -149,7 +128,11 @@ public class GamesAndActivities extends AppCompatActivity {
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.forum_chat:
-                        startActivity(new Intent(getApplicationContext(), ChatAndForum.class));
+                        startActivity(new Intent(getApplicationContext(), Forum.class));
+                        overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.chat:
+                        startActivity(new Intent(getApplicationContext(), Chat.class));
                         overridePendingTransition(0, 0);
                         return true;
                 }

@@ -1,7 +1,6 @@
 package com.introverted;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -81,8 +80,7 @@ import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 public class Dashboard extends AppCompatActivity implements LocationListener, MatchPreferencesDialog.MatchPreferenceDialogListener {
 
-    private SharedPreferences adminSession;
-    private SharedPreferences matchPreferences;
+    private SharedPreferences adminSession, matchPreferences, rejectedPreferences;
     private FusedLocationProviderClient cliente;
     private CardStackLayoutManager manager;
     private CardStackAdapter adapter;
@@ -114,6 +112,7 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
         ip = getString(R.string.IP);
         adminSession = getSharedPreferences("LOGIN_PREF", MODE_PRIVATE);
         matchPreferences = getSharedPreferences("MATCH_PREFERENCES", MODE_PRIVATE);
+        rejectedPreferences = getSharedPreferences("REJECTED_PEOPLE", MODE_PRIVATE);
         progressDialog = new ProgressDialog(this);
         progressDialogPreferences = new ProgressDialog(this);
         sqliteHelper = new SQLITEHelper(this);
@@ -164,6 +163,9 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
                         if (findViewById(R.id.rewind).getVisibility() == View.GONE)
                             findViewById(R.id.rewind).setVisibility(View.VISIBLE);
                         lastDirection = Direction.Left;
+                        //SharedPreferences.Editor editor = adminSession.edit();
+                        //editor.putInt("MATCH_MIN_AGE", Integer.parseInt(ageMin.getText().toString()));
+                        //editor.putInt("MATCH_MAX_AGE", Integer.parseInt(ageMax.getText().toString()));
                         contador++;
                     }
                     if (direction == Direction.Bottom) {
@@ -349,7 +351,11 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.forum_chat:
-                        startActivity(new Intent(getApplicationContext(), ChatAndForum.class));
+                        startActivity(new Intent(getApplicationContext(), Forum.class));
+                        overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.chat:
+                        startActivity(new Intent(getApplicationContext(), Chat.class));
                         overridePendingTransition(0, 0);
                         return true;
                 }

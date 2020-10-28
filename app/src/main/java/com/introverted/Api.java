@@ -23,4 +23,7 @@ public interface Api {
     @FormUrlEncoded
     @POST("getMatchInfo.php")
     Call<List<MatchCarrouselInfo>> getMatchesInfo(@Field("id_us")int id);
+
+    @GET("getForumPostedData.php")
+    Call<List<PostCardInfo>> getForumPostedData();
 }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparente"
+    android:elevation="4dp">
+
+    <ImageButton
+        android:id="@+id/cancelPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/ic_cancel_post"
+        android:onClick="closeActivity"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe un post"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:layout_marginStart="155dp"
+        android:text="Publicar"
+        android:textAllCaps="false"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="postPublication"
+        />
+
+</androidx.appcompat.widget.Toolbar>

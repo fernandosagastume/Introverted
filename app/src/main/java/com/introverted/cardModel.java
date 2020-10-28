@@ -2,8 +2,6 @@ package com.introverted;
 
 import android.graphics.Bitmap;
 
-import com.android.volley.toolbox.StringRequest;
-
 public class cardModel {
     private int id;
     private Bitmap image;

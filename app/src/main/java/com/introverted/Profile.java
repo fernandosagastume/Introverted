@@ -16,7 +16,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.ServiceWorkerClient;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -154,7 +153,11 @@ public class Profile extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.forum_chat:
-                        startActivity(new Intent(getApplicationContext(), ChatAndForum.class));
+                        startActivity(new Intent(getApplicationContext(), Forum.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.chat:
+                        startActivity(new Intent(getApplicationContext(), Chat.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

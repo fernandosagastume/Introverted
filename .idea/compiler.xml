@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$/app/src/main/java/com/introverted/CardStackAdapter.java" />
-      <file url="file://$PROJECT_DIR$/app/src/main/java/com/introverted/ChatAndForum.java" />
+      <file url="file://$PROJECT_DIR$/app/src/main/java/com/introverted/Forum.java" />
     </excludeFromCompile>
     <bytecodeTargetLevel target="1.8" />
   </component>

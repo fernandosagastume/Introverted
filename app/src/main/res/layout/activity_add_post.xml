@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPost">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    >
+
+    <include
+        android:id="@+id/toolbar_posts"
+        layout="@layout/toolbar_add_post" />
+
+    <RelativeLayout
+        android:id="@+id/rr_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_posts"
+        >
+
+        <LinearLayout
+            android:id="@+id/linlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elige el tipo de publicación"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/rubik_bold"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/textPost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparente"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_text_post"
+                        android:contentDescription="TEXT POST"
+                        android:onClick="setImIconGone"
+                        android:layout_gravity="center"
+                    />
+                    <TextView
+                        android:id="@+id/withText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Con texto"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imagePost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparente"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_gallery"
+                    android:contentDescription="IMAGE POST"
+                    android:onClick="setImIconVisible"
+                    android:layout_gravity="center"
+                    />
+
+                    <TextView
+                        android:id="@+id/withImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:text="Con imagen"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/addImPost"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_rectangles"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_pic_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rr_add"
+        android:onClick="requestImagePick"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/cancelIm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_cancel_post"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addImPost"
+        app:layout_constraintEnd_toEndOf="@+id/addImPost"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/addImPost"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_posts"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_lay_ap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Escribe el tema que quieres discutir"
+        android:textColorHint="@color/colorBlack"
+        app:hintTextColor="@color/second_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImPost">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tema_publi"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/border_button_post"
+            android:fontFamily="@font/rubik_medium"
+            android:inputType="text"
+            android:maxLength="25"
+            android:padding="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_lay_ap1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Escribe un titulo descriptivo"
+        android:textColorHint="@color/colorBlack"
+        app:hintTextColor="@color/second_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_lay_ap">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titulo_publi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_button_post"
+            android:fontFamily="@font/rubik_medium"
+            android:inputType="text"
+            android:maxLength="50"
+            android:minHeight="65dp"
+            android:padding="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_lay_ap2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comparte tus pensamientos"
+        android:textColorHint="@color/colorBlack"
+        app:counterTextColor="@color/second_primary"
+        app:counterEnabled="true"
+        android:layout_marginTop="5dp"
+        app:hintTextColor="@color/second_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_lay_ap1">
+        <!-- app:counterMaxLength="140" -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/publicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_button_post"
+            android:fontFamily="@font/rubik_medium"
+            android:inputType="textMultiLine"
+            android:minHeight="65dp"
+            android:padding="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

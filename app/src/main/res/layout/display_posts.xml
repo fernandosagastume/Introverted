@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/postsCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardMaxElevation="10dp"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                    >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/userPic"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="centerCrop"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/sample"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/subjectTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/matchView"
+                                android:text="Subject"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:fontFamily="@font/rubik_bold"
+                                android:textSize="15dp"
+                                />
+                            <TextView
+                                android:id="@+id/usernameTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Este texto username y time"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlackVariant"
+                                android:fontFamily="@font/rubik_medium"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/postSettings"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_ellipsis"
+                    android:background="@color/transparente"
+                    android:layout_marginStart="-20dp"
+                    />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/postTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Este texto es del titulo"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:textColor="@color/colorBlackVariant"
+                        android:fontFamily="@font/rubik_bold"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        />
+                    <TextView
+                        android:id="@+id/postText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Este texto es del post"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:textColor="@color/colorBlackVariant"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_marginTop="-15dp"
+                        android:textSize="14sp"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="50dp"
+                        android:maxHeight="450dp"
+                        android:adjustViewBounds="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="-40dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            >
+                        <ImageButton
+                            android:id="@+id/likePost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparente"
+                            android:src="@drawable/ic_like_post"
+                            />
+                            <TextView
+                                android:id="@+id/likeCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/colorBlackVariant"
+                                android:fontFamily="@font/rubik_bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+                            <ImageButton
+                                android:id="@+id/dislikePost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparente"
+                                android:src="@drawable/ic_dislike_post"
+                                android:paddingStart="20dp"
+                                />
+                            <TextView
+                                android:id="@+id/dislikeCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/colorBlackVariant"
+                                android:fontFamily="@font/rubik_bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+                            <ImageButton
+                                android:id="@+id/commentPost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparente"
+                                android:src="@drawable/ic_comment"
+                                android:paddingStart="20dp"
+                                />
+                            <TextView
+                                android:id="@+id/commenteCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/colorBlackVariant"
+                                android:fontFamily="@font/rubik_bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+                            <ImageButton
+                                android:id="@+id/sharePost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparente"
+                                android:src="@drawable/ic_share"
+                                android:paddingStart="20dp"
+                                />
+                            <TextView
+                                android:id="@+id/shareText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comparte"
+                                android:textColor="@color/colorBlackVariant"
+                                android:fontFamily="@font/rubik_bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
