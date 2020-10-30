@@ -3,6 +3,7 @@ package com.introverted;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,16 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
         holder.link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context, ProfileLink.class));
+                Intent in;
+                in = new Intent(context, ProfileLink.class);
+                in.putExtra("ID", items.get(position).getId());
+                in.putExtra("NOMBRE", items.get(position).getName());
+                in.putExtra("CITY", items.get(position).getCity());
+                in.putExtra("DISTANCE", holder.distance.getText().toString());
+                String[] splt = holder.name.getText().toString().split(", ");
+                in.putExtra("AGE", splt[1]);
+                BMHelper.getInstance_PL().setPpBM(((BitmapDrawable)holder.image.getDrawable()).getBitmap());
+                context.startActivity(in);
             }
         });
     }

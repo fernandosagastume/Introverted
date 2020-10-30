@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -32,10 +31,7 @@ import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -170,11 +166,19 @@ public class Forum extends AppCompatActivity {
                         String postTime = "";
                         try {
                             long diff = ahora.getTime() - date.getTime();
-                            long mins = diff / (60 * 1000);
-                            long horas = diff / (60 * 60 * 1000);
-                            long dias = diff / (60 * 60 * 60 * 1000);
+                            long mins = diff / (60*1000);
+                            long horas = diff / (60*60*1000);
+                            long dias = diff / (1000*60*60*24);
+                            Long años = diff / (1000*60*60*24*365);
+                            Log.e("TAG: ", ""+dias);
 
-                            if(dias > 0){
+                            if(años > 0){
+                                if(años == 1)
+                                    postTime = años + " año";
+                                else
+                                    postTime = años + " años";
+                            }
+                            else if(dias > 0){
                                 if(dias == 1)
                                     postTime = dias + " día";
                                 else

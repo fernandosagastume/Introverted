@@ -124,6 +124,7 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
         nomatch = findViewById(R.id.nomatches);
         nomatch.setText("No hay más personas para mostrar, por favor cambia tus preferencias");
         contador = 0;
+        PPHelper.getInstanceNO().setConter(contador);
         imageCounter = 0;
         imageRequests = 0;
         title = findViewById(R.id.introvertedDashboard);
@@ -430,6 +431,7 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
 
                     Geocoder geocoder;
                     List<Address> addresses;
+                    int conter = 0;
                     if (swipeCardInfos.size() > 1) {
                         imageRequests = swipeCardInfos.size();
                         findViewById(R.id.likeButton).setVisibility(View.VISIBLE);
@@ -541,7 +543,12 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
                             userIm = BitmapFactory.decodeResource(getResources(), R.drawable.no_image);
                             BMHelper.getInstance().setBitmap(0, userIm);
                             RequestPI requestPI = (RequestPI) new RequestPI(sci.getId(), modelo, "POST_PROF_PIC").execute();
+                            PPHelper.getInstance().setName(fullName);
+                            PPHelper.getInstance().setCity(ciudad);
+                            PPHelper.getInstance().setDistance(distance);
+                            PPHelper.getInstance().setSex(sci.getSexo());
                         }
+                        conter++;
                     }
                     adapter.notifyDataSetChanged();
                 }
@@ -684,6 +691,7 @@ public class Dashboard extends AppCompatActivity implements LocationListener, Ma
                                 userIm = BitmapFactory.decodeResource(getResources(), R.drawable.no_image);
                                 BMHelper.getInstance().setBitmap(0, userIm);
                                 RequestPI requestPI = (RequestPI) new RequestPI(sci.getId(), modelo, "POST_PROF_PIC").execute();
+
                             }
                         }
                         adapter.notifyDataSetChanged();

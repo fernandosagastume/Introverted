@@ -403,7 +403,7 @@ public class RegistroGustosPt7 extends AppCompatActivity {
     private void executeService (final String p1, final String p2, final String p3, final String p4, final String p5,
                                  final String p6, final String p7, final String p8, final String p9, final String p10,
                                          final String p11, final String p12, final String p13, final Intent in){
-        StringRequest sr = new StringRequest(Request.Method.POST, "http://192.168.0.6/WebService-Introverted/insert-user.php",
+        StringRequest sr = new StringRequest(Request.Method.POST, "http://192.168.0.5/WebService-Introverted/insert-user.php",
                 response -> {
                     if (!response.equals("0")) {
                         SharedPreferences.Editor editor = adminSession.edit();

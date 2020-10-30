@@ -1,0 +1,12 @@
+<vector android:height="480dp" android:viewportHeight="58"
+    android:viewportWidth="58" android:width="480dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#c03a2b" android:fillType="nonZero" android:pathData="M8,0L50,0A8,8 0,0 1,58 8L58,50A8,8 0,0 1,50 58L8,58A8,8 0,0 1,0 50L0,8A8,8 0,0 1,8 0z"/>
+    <path android:fillColor="#e64c3c" android:fillType="nonZero" android:pathData="M54,8L54,50A4,4 0,0 1,50 54L8,54A4,4 0,0 1,4 50L4,8A4,4 0,0 1,8 4L50,4A4,4 0,0 1,54 8z"/>
+    <path android:fillColor="#f0c419" android:fillType="nonZero" android:pathData="m29.41,21.41c0.8073,0.391 1.693,0.5928 2.59,0.59 3.3137,0 6,-2.6863 6,-6s-2.6863,-6 -6,-6 -6,2.6863 -6,6c-0.0028,0.897 0.199,1.7827 0.59,2.59z"/>
+    <path android:fillColor="#f29c1f" android:fillType="nonZero" android:pathData="m36.491,37.486c4.808,-4.76 4.163,-10.127 1.169,-13.146 -2.9,-2.883 -9.077,-3.6 -13.66,0.732v10.928z"/>
+    <path android:fillColor="#f0c419" android:fillType="nonZero" android:pathData="m18.59,21.41c-0.8073,0.391 -1.693,0.5928 -2.59,0.59 -3.3137,0 -6,-2.6863 -6,-6s2.6863,-6 6,-6 6,2.6863 6,6c0.0028,0.897 -0.199,1.7827 -0.59,2.59z"/>
+    <path android:fillColor="#f29c1f" android:fillType="nonZero" android:pathData="m23.929,26.063c-7.055,-7.899 -15.929,-3.022 -15.929,3.937v5c0,0.5523 0.4477,1 1,1h15z"/>
+    <path android:fillColor="#f3d55b" android:fillType="nonZero" android:pathData="M24,24m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+    <path android:fillColor="#f0c419" android:fillType="nonZero" android:pathData="m31.75,36c-0.3625,-1.3827 -1.0834,-2.6452 -2.09,-3.66 -2.0327,-2.0283 -4.9957,-2.8132 -7.7659,-2.0571 -2.7702,0.7561 -4.9237,2.9374 -5.6441,5.7171 -0.1649,0.6539 -0.2488,1.3256 -0.25,2v5c0,0.5523 0.4477,1 1,1h14c0.5523,0 1,-0.4477 1,-1v-1z"/>
+    <path android:fillColor="#f5efca" android:fillType="nonZero" android:pathData="m49,36h-5c-0.5523,0 -1,-0.4477 -1,-1v-5c0,-0.5523 -0.4477,-1 -1,-1h-4c-0.5523,0 -1,0.4477 -1,1v5c0,0.5523 -0.4477,1 -1,1h-5c-0.5523,0 -1,0.4477 -1,1v4c0,0.5523 0.4477,1 1,1h5c0.5523,0 1,0.4477 1,1v5c0,0.5523 0.4477,1 1,1h4c0.5523,0 1,-0.4477 1,-1v-5c0,-0.5523 0.4477,-1 1,-1h5c0.5523,0 1,-0.4477 1,-1v-4c0,-0.5523 -0.4477,-1 -1,-1z"/>
+</vector>

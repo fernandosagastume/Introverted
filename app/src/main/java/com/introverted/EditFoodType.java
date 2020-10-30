@@ -28,13 +28,13 @@ import java.util.Objects;
 public class EditFoodType extends AppCompatActivity {
     ListView food;
     Toolbar toolbar;
-    int[] icons = {R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-            R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-            R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-            R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-            R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+    int[] icons = {R.drawable.ic_china_food, R.drawable.ic_pizza, R.drawable.ic_sushi,
+            R.drawable.ic_tamales, R.drawable.ic_taco,R.drawable.ic_paella,
+            R.drawable.ic_peru_food, R.drawable.ic_halal,R.drawable.ic_laddu,
+            R.drawable.ic_argentina_food,R.drawable.ic_uruguay_food, R.drawable.ic_vietnam_food,
+            R.drawable.ic_croissant, R.drawable.ic_tomyam, R.drawable.ic_fast_food};
     String[] foodType = {"Comida china",
-            "Comida italina",
+            "Comida italiana",
             "Comida japonesa",
             "Comida guatemalteca",
             "Comida mexicana" ,

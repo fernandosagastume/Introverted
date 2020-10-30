@@ -28,10 +28,10 @@ import java.util.Objects;
 public class EditHobbies extends AppCompatActivity {
     ListView hobbies;
     Toolbar toolbar;
-    int[] icons = {R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-            R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-            R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-            R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+    int[] icons = {R.drawable.ic_photography, R.drawable.ic_writing, R.drawable.ic_painting,
+            R.drawable.ic_cooking, R.drawable.ic_poetry,R.drawable.ic_walks,
+            R.drawable.ic_gardening, R.drawable.ic_ps4_controller,R.drawable.ic_drawing,
+            R.drawable.ic_bloging,R.drawable.ic_traveling, R.drawable.ic_sports};
     String[] hobbyList = {"Fotografía",
             "Escritura",
             "Pintura",

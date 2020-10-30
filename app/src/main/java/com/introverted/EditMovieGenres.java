@@ -29,10 +29,10 @@ import java.util.Objects;
 public class EditMovieGenres extends AppCompatActivity {
     ListView movie;
     Toolbar toolbar;
-    int[] icons = {R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-            R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-            R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-            R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+    int[] icons = {R.drawable.ic_horror_movie, R.drawable.ic_fantasy_movie, R.drawable.ic_science_fiction,
+            R.drawable.ic_drama, R.drawable.ic_mystery,R.drawable.ic_documentary,
+            R.drawable.ic_romantic_movie, R.drawable.ic_comedy,R.drawable.ic_cartoon,
+            R.drawable.ic_crime,R.drawable.ic_action_movie, R.drawable.ic_adventure_movie};
     String[] genres = {"Horror",
         "Fantasía",
         "Ciencia Ficción",

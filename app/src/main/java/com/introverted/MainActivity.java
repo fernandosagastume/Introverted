@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     //Objects to run animations on
     ImageView logoIcon;
     TextView logoText;
-    private static int MS = 1000;
+    private static int MS = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

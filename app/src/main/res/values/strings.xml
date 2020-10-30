@@ -110,19 +110,13 @@
         <item>Fantasía</item>
         <item>Graffiti</item>
         <item>Barroco</item>
-        <item>Vanguardista</item>
-        <item>Futurista</item>
-        <item>Suprematista</item>
     </string-array>
 
     <string-array name="anime">
-        <item>Kodomo</item>
         <item>Shonen</item>
         <item>Shojo</item>
         <item>Seinen</item>
-        <item>Josei</item>
         <item>Isekai</item>
-        <item>Maho shojo</item>
         <item>Sentai</item>
         <item>Spokon</item>
         <item>Mecha</item>
@@ -130,7 +124,6 @@
         <item>Cyberpunk</item>
         <item>Comedia</item>
         <item>Harem</item>
-        <item>Gekiga</item>
     </string-array>
 
     <string-array name="videogames_genres">
@@ -155,7 +148,6 @@
         <item>Novela romántica</item>
         <item>Novela de terror</item>
         <item>Ciencia ficción</item>
-        <item>Novela negra</item>
         <item>Novela Histórica</item>
         <item>Biografías</item>
         <item>Poesía</item>

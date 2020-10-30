@@ -54,44 +54,43 @@ public class EditPersonalCategory extends AppCompatActivity {
             //Caso melómano
             case "melómano":
                 personalList = getResources().getStringArray(R.array.music_activities);
-                icons = new int[]{R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-                        R.drawable.ic_indie, R.drawable.ic_rock_alternativo, R.drawable.ic_country};
+                icons = new int[]{R.drawable.ic_concierto, R.drawable.ic_karaoke, R.drawable.ic_chill,
+                        R.drawable.ic_play_instrument, R.drawable.ic_radio_de_coche, R.drawable.ic_banda};
                 break;
             //Caso gamer
             case "gamer":
                 personalList = getResources().getStringArray(R.array.videogames_genres);
-                icons = new int[]{R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-                        R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-                        R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-                        R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-                        R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+                icons = new int[]{R.drawable.ic_shooter, R.drawable.ic_action_game, R.drawable.ic_world_war,
+                        R.drawable.ic_sword, R.drawable.ic_sports_vg,R.drawable.ic_adventure_vg,
+                        R.drawable.ic_tetris, R.drawable.ic_strategy,R.drawable.ic_racing_game,
+                        R.drawable.ic_virtual_reality,R.drawable.ic_musical_vg, R.drawable.ic_party,
+                        R.drawable.ic_fighting_game, R.drawable.ic_arcade, R.drawable.ic_action_vg};
                 break;
             //Caso bibliófilo
             case "bibliófilo":
                 personalList = getResources().getStringArray(R.array.biblio);
-                icons = new int[]{R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-                        R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-                        R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-                        R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-                        R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+                icons = new int[]{R.drawable.ic_romance_book, R.drawable.ic_terror, R.drawable.ic_scifi,
+                        R.drawable.ic_history_book, R.drawable.ic_bio_book,R.drawable.ic_poetry_book,
+                        R.drawable.ic_crime_book, R.drawable.ic_humour_book,R.drawable.ic_mitologia,
+                        R.drawable.ic_theater_book,R.drawable.ic_fairy, R.drawable.ic_gothic,
+                        R.drawable.ic_adventure_book, R.drawable.ic_fantasia};
                 break;
             //Caso artista
             case "artista":
                 personalList = getResources().getStringArray(R.array.art_type);
-                icons = new int[]{R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-                        R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-                        R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-                        R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-                        R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-                        R.drawable.ic_heavy_metal};
+                icons = new int[]{R.drawable.ic_arte_abstracto, R.drawable.ic_arte_moderno, R.drawable.ic_arte_clasico,
+                        R.drawable.ic_conceptual, R.drawable.ic_arte_impresionista,R.drawable.ic_pintura_neoimpresionista,
+                        R.drawable.ic_arte_pop, R.drawable.ic_cubista, R.drawable.ic_surrealismo,
+                        R.drawable.ic_contemporaneo, R.drawable.ic_arte_fantasia,R.drawable.ic_graffiti,
+                        R.drawable.ic_barroco};
                 break;
             case "anime":
                 personalList = getResources().getStringArray(R.array.anime);
-                icons = new int[]{R.drawable.ic_pop, R.drawable.ic_jazz, R.drawable.ic_blues,
-                        R.drawable.ic_indie, R.drawable.ic_rock_alternativo,R.drawable.ic_country,
-                        R.drawable.ic_reggae, R.drawable.ic_rock_clasico,R.drawable.ic_rock,
-                        R.drawable.ic_soul,R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal,
-                        R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal, R.drawable.ic_heavy_metal};
+                icons = new int[]{R.drawable.ic_naruto, R.drawable.ic_shojo,
+                        R.drawable.ic_adult, R.drawable.ic_goblin,
+                        R.drawable.ic_sentai, R.drawable.ic_bycicle,
+                        R.drawable.ic_robot,R.drawable.ic_suspense, R.drawable.ic_cyberpunk,
+                        R.drawable.ic_comedy_anime, R.drawable.ic_polyamory};
                 break;
             default:
                 break;

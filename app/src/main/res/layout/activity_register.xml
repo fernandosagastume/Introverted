@@ -102,7 +102,7 @@
             android:layout_width="350dp"
             android:layout_height="56dp"
             android:layout_marginBottom="250dp"
-            android:maxLength="25"
+            android:maxLength="50"
             android:background="@drawable/editt_bg"
             android:fontFamily="@font/rubik_medium"
             android:foregroundGravity="center"

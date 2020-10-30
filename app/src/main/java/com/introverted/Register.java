@@ -172,24 +172,26 @@ public class Register extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        if(response.equals("11")){
-                            email.setError("Ya hay una cuenta asociada a ese correo electrónico");
-                            user.setError("Ya hay una cuenta asociada a ese nombre de usuario");
-                        }
-                        else if(response.equals("10")){
-                            email.setError("Ya hay una cuenta asociada a ese correo electrónico");
-                        }
-                        else if(response.equals("01")){
-                            user.setError("Ya hay una cuenta asociada a ese nombre de usuario");
-                        }
-                        else {
-                            Intent in = new Intent(Register.this, RegistroGustos.class);
-                            in.putExtra("MAIL", email.getText().toString());
-                            in.putExtra("USER", user.getText().toString());
-                            in.putExtra("PASSWORD", contraseña.getText().toString());
-                            in.putExtra("GENDER", spin.getSelectedItem().toString());
-                            in.putExtra("BDAY", cumpleaños);
-                            startActivity(in);
+                        switch (response) {
+                            case "11":
+                                email.setError("Ya hay una cuenta asociada a ese correo electrónico");
+                                user.setError("Ya hay una cuenta asociada a ese nombre de usuario");
+                                break;
+                            case "10":
+                                email.setError("Ya hay una cuenta asociada a ese correo electrónico");
+                                break;
+                            case "01":
+                                user.setError("Ya hay una cuenta asociada a ese nombre de usuario");
+                                break;
+                            default:
+                                Intent in = new Intent(Register.this, RegistroGustos.class);
+                                in.putExtra("MAIL", email.getText().toString());
+                                in.putExtra("USER", user.getText().toString());
+                                in.putExtra("PASSWORD", contraseña.getText().toString());
+                                in.putExtra("GENDER", spin.getSelectedItem().toString());
+                                in.putExtra("BDAY", cumpleaños);
+                                startActivity(in);
+                                break;
                         }
                     }
                 }, new Response.ErrorListener() {

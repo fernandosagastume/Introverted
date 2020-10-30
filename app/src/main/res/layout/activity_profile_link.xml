@@ -1,9 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileLink">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_pl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileLink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/otheruserIm"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:src="@drawable/no_image"
+                android:scaleType="fitCenter"
+                android:background="@color/colorPrimary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Información personal"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+                    android:minHeight="45dp"
+                    android:gravity="fill_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/ppName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/colorBlack"
+                    android:text="Nombre: "
+                    android:minHeight="45dp"
+                    android:gravity="fill_vertical"
+                    android:background="@drawable/border_button_post"
+                    />
+                <TextView
+                    android:id="@+id/ppAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/colorBlack"
+                    android:minHeight="45dp"
+                    android:gravity="fill_vertical"
+                    android:text="Edad: "
+                    android:background="@drawable/border_button_post"
+                    />
+
+                <TextView
+                    android:id="@+id/ppCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/colorBlack"
+                    android:minHeight="45dp"
+                    android:gravity="fill_vertical"
+                    android:background="@drawable/border_button_post"
+                    android:text="Ciudad: "
+                    />
+                <TextView
+                    android:id="@+id/ppDistancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textColor="@color/colorBlack"
+                    android:minHeight="45dp"
+                    android:gravity="fill_vertical"
+                    android:background="@drawable/border_button_post"
+                    android:text="Distancia: "
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intereses"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+
+                    />
+
+                <ListView
+                    android:id="@+id/listHob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Música preferida"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+
+                    />
+
+                <ListView
+                    android:id="@+id/listMusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Películas preferidas"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+
+                    />
+
+                <ListView
+                    android:id="@+id/listMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comida favorita"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+
+                    />
+
+                <ListView
+                    android:id="@+id/listFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/categoriaActual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/rubik_bold"
+                    android:textSize="22sp"
+                    />
+
+                <ListView
+                    android:id="@+id/listCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="-15dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
